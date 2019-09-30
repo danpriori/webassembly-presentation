@@ -1,0 +1,4 @@
+emcc math.c -o math.js -s ONLY_MY_CODE=1 -s BINARYEN_METHOD='native-wasm,asmjs'
+emcc math.c -o math.js -s ONLY_MY_CODE=1
+emcc math.c -O3 -s WASM=1 -s SIDE_MODULE=1 -o math.wasm
+emcc math.c -Os -s WASM=1 -s SIDE_MODULE=1 -s ONLY_MY_CODE=1 -o math.wasm
